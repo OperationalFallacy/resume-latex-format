@@ -1,0 +1,150 @@
+\documentclass{article}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=25mm,
+ right=20mm,
+ top=10mm,
+ bottom=10mm
+ }
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage{bm}
+\newcommand\boldm[1]{\textcolor{red}{\mbox{\footnotesize\mb{#1}}}}
+\usepackage{hyphenat}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+}
+
+\usepackage[some]{background}
+\pagenumbering{gobble}
+
+\newcommand\ytl[4]{
+\parbox[b]{16em}{\footnotesize\color{cyan}\bfseries\sffamily 
+\begin{minipage}[c]{1em}
+  \boldm{$>$}
+\end{minipage}
+\begin{minipage}[c]{13em}
+    \raggedright{#2}
+\end{minipage}
+#1~$\cdots$~}\makebox[0pt][c]{$\bullet$}\vrule\quad \parbox[c]{30em}{\vspace{12pt}\color{red!40!black!80}
+\sffamily\small\textbf{#3}\\
+\raggedright\small#4.}}
+
+\DeclareFixedFont{\chapterfont}{T1}{phv}{bx}{n}{11cm}
+\graphicspath{ {./images/} }
+
+\begin{document}
+ 
+% Most of titles have some depth. The total space is
+% a bit larger than the picture box.
+{\Huge \textcolor{black!75}{Roman} \textcolor{black!35}{\scshape Naumenko}}  \hfill
+for inquiries: \href{mailto:roman@naumenko.ca?subject=Inquiry about consulting services}{roman@naumenko.ca}
+\\
+\textcolor{black!30}{\rule[.5\baselineskip]{\textwidth}{1pt}}
+
+\raggedright\sffamily\color{black!80}{Cloud Consultant, AWS Cloud Architect and full stack developer. On a mission to build confidence in the Public Cloud for engineering teams and organizations. Contributor to open-source projects. }
+
+\begin{table}[hbt!]
+\ytl
+{2021}
+{Sr. Cloud Consultant}
+{Contino, New York}
+{Assess and fix the team's development workflows. Prototype and present solutions on cloud migration strategies}
+
+\ytl
+{2020}
+{AWS Architect}
+{ETS, Princeton}
+{I developed AWS CDK constructs for monitoring, security, testing, CI/CD, and Serverless applications}
+
+\ytl
+{2019}
+{AWS Architect}
+{Vanguard, Malvern}
+{Contributed to Serverless framework (similar to AWS SAM). Wrote AWS Glue jobs for ETL pipeline for external data providers}
+
+\ytl
+{2017}
+{Cloud Architect}
+{Conductor, San Francisco}
+{Build and run batch job clusters (home-grown, Nomad and Kubernetes schedulers) scaling to 100k+ cores}
+
+\ytl
+{2016}
+{Cloud Architect}
+{Mattel, San Francisco}
+{Designed and deployed solution for multi-region IoT platform on AWS, including automation for AWS China region.}
+
+\ytl
+{2015}
+{Sr. DevOps Engineer}
+{Gliffy, San Francisco }
+{Set up automation for immutable AWS infrastructure with Terraform, Packer, Consul, TestKitchen
+Migrated diagrams blob storage from MySQL to S3}
+
+\ytl
+{2015}
+{Sr. AWS DevOps Engineer}
+{Radian, Philadelphia}
+{Developed Chef cookbooks. SRE functions for apps security and compliance on AWS}
+\ytl
+{2014}
+{Senior Systems Engineer}
+{Juice Mobile, Toronto}
+{Build and run performance-optimized AWS EC2 with SaltStack for ad-tech bidding platform (RTBkit based)}
+
+\ytl
+{2013}
+{Systems Architect}
+{RBC Capital Markets, Toronto}
+{Developed solutions for CICD components: Jenkins with Jira, SVN with LDAP, builds audit, compliance reports}
+
+\ytl
+{2010}{Systems Engineering Specialist}{Blackberry Inc, Toronto }
+{Leading engineering effort for Big Data initiatives. Design and support of Appian BPM, SAS systems}
+
+\ytl{2008}
+{Systems Engineer}
+{Frontline Technologies, Toronto}
+{Built reliable infrastructure on commodity hardware: networks, storage, and firewalls to support hosted services.}
+
+\ytl{2007}
+{Systems Engineer}
+{Arkan Group, Moscow}
+{Installed "data collector" racks in multiple locations across the city for full radio coverage and fault-tolerance}
+
+\ytl{2004}
+{Consultant}
+{Freelance, Moscow Russia}
+{Developed and deployed e-commerce projects, web sites and integration solutions}
+
+\ytl{2001}
+{Data Scientist}
+{National Radiation and Epidemiological Registry, Obninsk Russia}
+{Developed risks models and simulation for cohort analysis of cancer incidents among Chernobyl liquidators}
+
+\ytl{1996}
+{Systems Engineer - M.S.}
+{Obninsk Technical University for Nuclear Power Engineering, Russia}
+{Completed master's program of study specializing in Computers, Complexes, Systems, and Networks}
+
+\centering
+\vspace{0.8em}
+\includegraphics[scale=0.2]{AWS-SolArchitect-Professional-2020.png}
+\includegraphics[scale=0.2]{AWS-Developer-Associate-2020.png}
+\includegraphics[scale=0.2]{AWS-MachineLearning-Specialty-2020.png}
+\includegraphics[scale=0.39]{Terraform-Associate-Badge.png}
+
+\end{table}
+ 
+\end{document}
+
+Learn AWS CDK to deploy applications and infrastructure
